@@ -8,6 +8,7 @@ export const initialState = {
 }
 
 const reducer = (state = initialState, action) => {
+    console.log('dragonReducer.js ln:11 action:', action);
     switch(action.type) {
         case ADD_MEMBER:
             return {

@@ -12,7 +12,8 @@ import DragonList from './components/DragonList';
 import './styles.css';
 
 const store = createStore(reducer);
-console.log(store.getState());
+console.log('index.js ln:15 store:', store);
+console.log('index.js ln:16 store.getState()', store.getState());
 
 function App() {
   return (
