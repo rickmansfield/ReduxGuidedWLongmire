@@ -8,9 +8,10 @@ export const initialState = {
 }
 
 const reducer = (state = initialState, action) => {
-    console.log('dragonReducer.js ln:11 action:', action);
+    // console.log('dragonReducer.js ln:11 action:', action);
     switch(action.type) {
         case ADD_MEMBER:
+            // console.log('draconReducer.js ln:14 case ADD_MEMBER fired');
             return {
                 ...state,
                 members:[...state.members, {name: action.payload, dragonStatus: true}]

@@ -15,10 +15,12 @@ class DragonList extends React.Component {
   };
 
   handleClick = ()=> {
+    // console.log('DragonLIst.js ln:18 handleClick Fired');
     this.props.addMember(this.state.newMember);
   }
 
   render() {
+    // console.log('DragonList.js ln:23 this.props:', this.props);
     return (
       <div>
         <div className="friends-list">
@@ -39,6 +41,7 @@ class DragonList extends React.Component {
 }
 
 const mapStateToProps = (state)=>{
+  // console.log('DragonList.js ln:43 state:', state);
   return {
     members:state.dragonReducer.members
   }

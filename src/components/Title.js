@@ -6,6 +6,7 @@ import TitleDisplay from './TitleDisplay';
 import TitleForm from './TitleForm';
 
 const Title = (props) => {
+  // console.log('Title.js ln:9 Title=(props)', props);
   return (
     <div>
       <h1>{props.appName}</h1>
@@ -19,7 +20,7 @@ const Title = (props) => {
 };
 
 const mapStateToProps = (state) => {
-  console.log(state);
+  // console.log('Title.js ln:22 mapStateToProps state:', state);
   return({
     appName: state.titleReducer.appName,
     editing: state.titleReducer.editing

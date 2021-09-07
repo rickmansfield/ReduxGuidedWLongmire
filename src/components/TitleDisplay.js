@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { toggleEditing } from './../actions/titleActions';
 
 const TitleDisplay = (props)=> {
-  console.log('TitleDisplay.js ln:6 props:', props);
+  // console.log('TitleDisplay.js ln:6 props:', props);
     const handleToggleEditing = () => {
       props.toggleEditing();
     }
@@ -18,7 +18,7 @@ const TitleDisplay = (props)=> {
 }
 
 const mapStateToProps = (state)=> {
-  
+  // console.log('TitleDisplay.js mapStateToProps=(state)', state);
   return({
     title: state.titleReducer.title
   });
@@ -28,6 +28,6 @@ export default connect(mapStateToProps, { toggleEditing })(TitleDisplay);
 
 //Raw pre-destructuring alternative 
 // const mapActionsToProps = {
-//   toggleEditing: toggleEditing
+//   toggleEditing: toggleEditing 
 // }; 
 // export default connect (mapStateToProps, mapActionsToProps)(TitleDisplay);
