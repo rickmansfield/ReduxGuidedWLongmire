@@ -8,4 +8,10 @@ const rootReducer = combineReducers({
   titleReducer
 });
 
+//Alternative 
+// const rootReducer = combineReducers({
+//   dragon: dragonReducer,
+//   title: titleReducer
+// });
+
 export default rootReducer;
